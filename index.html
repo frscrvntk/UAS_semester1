@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wonderful Indonesia</title>
+  <link rel="stylesheet" href="wonderfullindonesia.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Wonderful Indonesia</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Indonesia</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#culture">Culture</a></li>
+        <li><a href="#food">Food</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="darkModeBtn">🌙</button>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <video autoplay muted loop playsinline class="bg-video">
+      <source src="video/video.mp4" type="video/mp4">
+    </video>
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+      <h1>Explore the Beauty of Indonesia</h1>
+      <p>Discover breathtaking destinations, rich culture, and unforgettable experiences.</p>
+      <a href="#destinations" class="explore-btn">Explore Now</a>
+    </div>
+  </section>
+
+  <!-- ABOUT INDONESIA -->
+  <section id="about">
+  <h2>About Indonesia</h2>
+  <div class="about-box">
+    <div class="about-text">
+      <h3>The Heart of Southeast Asia</h3>
+      <p>
+        Indonesia is the world's largest archipelago, consisting of more than
+        17,000 islands spread across Southeast Asia.
+      </p>
+      <p>
+        Home to over 270 million people, Indonesia is one of the most culturally
+        diverse countries in the world.
+      </p>
+      <p>
+        Indonesia has more than 1,300 ethnic groups and over 700 local languages,
+        making it rich in traditions, culture, and heritage.
+      </p>
+      <p>Indonesia consists of five major islands:</p>
+<ul>
+  <li>Sumatra</li>
+  <li>Java</li>
+  <li>Kalimantan</li>
+  <li>Sulawesi</li>
+  <li>Papua</li>
+</ul>
+    </div>
+  </div>
+</section>
+
+  <!-- DESTINATIONS -->
+  <section id="destinations">
+    <h2>Top Destinations</h2>
+    <h4>You can explore Indonesia’s extraordinary natural beauty and experience breathtaking landscapes with stunning, authentic views. Discover a paradise filled with tropical beaches, majestic mountains, and unforgettable adventures.</h4>
+    <div class="card-container">
+
+      <div class="card" onclick="openPopup('Bali', 'Beautiful beaches, temples, and culture.')">
+        <img src="foto/kelingkin.jpg"
+        <h3>Bali</h3>
+      </div>
+
+      <div class="card" onclick="openPopup('Raja Ampat', 'Paradise for marine biodiversity.')">
+        <img src="foto/rajam.jpg">
+        <h3>Raja Ampat</h3>
+      </div>
+
+      <div class="card" onclick="openPopup('Bromo', 'Famous mountain with sunrise view.')">
+        <img src="foto/bromo.jpg">
+        <h3>Bromo</h3>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CULTURE -->
+  <section id="culture">
+    <h2>Indonesian Culture</h2>
+    <h4>Discover the beauty of Indonesian culture by creating handmade crafts, dancing to the rhythm of traditional music, and enjoying spectacular cultural performances. Create new experiences and unforgettable memories that will last a lifetime.</h4>
+    <div class="card-container">
+      <div class="card">
+        <img src="foto/batik.jpg">
+        <h3>Batik</h3>
+      </div>
+
+      <div class="card">
+        <img src="foto/tari.jpg">
+        <h3>Traditional Dance</h3>
+      </div>
+
+      <div class="card">
+        <img src="foto/wayang.jpg">
+        <h3>Local Traditions</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOD -->
+  <section id="food">
+    <h2>Must Try Foods</h2>
+    <h4>Enjoy a variety of authentic Indonesian dishes, rich in traditional spices and unique flavors in every bite. Each dish offers an extraordinary combination of savory, sweet, spicy, and aromatic seasonings, creating a delightful culinary experience that satisfies your palate and leaves a lasting impression.</h4>
+    <div class="card-container">
+      <div class="card">
+        <img src="foto/rendang.jpg">
+        <h3>Rendang</h3>
+      </div>
+
+      <div class="card">
+        <img src="foto/nasgor.jpg">
+        <h3>Nasi Goreng</h3>
+      </div>
+
+      <div class="card">
+        <img src="foto/sate.jpg">
+        <h3>Sate</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <h4>Explore our gallery and discover the beauty of Indonesia through every captured moment.</h4>
+    <div class="gallery-grid">
+      <img src="foto/kamboja.jpg">
+      <img src="foto/dayak.jpg">
+      <img src="foto/klepon.jpg">
+      <img src="foto/minang.jpg">
+      <img src="foto/cermin.jpg">
+      <img src="foto/cendrawasih.jpg">
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <h4>Ready to explore the beauty of Indonesian culture? Contact us today for more information and start planning your journey.</h4>
+    <div class="contact-box">
+      <p><strong>Name:</strong> Frisca Irvinatika</p>
+      <p><strong>Email:</strong> Frscrvntk@gmail.com</p>
+      <p><strong>Country:</strong> Indonesia</p>
+
+      <form id="contactForm">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- POPUP -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <h2 id="popupTitle"></h2>
+      <p id="popupText"></p>
+    </div>
+  </div>
+
+  <script src="wonderfullindonesia.js"></script>
+
+  <!-- FOOTER -->
+   <footer>
+    <p>&copy; 2026 Wonderful Indonesia | Frisca Irvinatika | 251011750256</p>
+   </footer>
+</body>
+</html>
